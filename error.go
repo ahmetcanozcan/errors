@@ -146,8 +146,9 @@ func (err *_error) wrap(cause error) Error {
 
 func (err *_error) copy() *_error {
 	return &_error{
-		cause:  err.cause,
-		code:   err.code,
-		status: err.status,
+		cause:   err.cause,
+		code:    err.code,
+		status:  err.status,
+		message: err.message,
 	}
 }
