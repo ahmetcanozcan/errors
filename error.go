@@ -150,5 +150,6 @@ func (err *_error) copy() *_error {
 		code:    err.code,
 		status:  err.status,
 		message: err.message,
+		desc:    err.desc,
 	}
 }
